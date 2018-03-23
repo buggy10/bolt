@@ -13,7 +13,7 @@
 </head>
 <body>
   <header>
-    <div class="clearfix">
+    <div class="inner clearfix">
       <i class="fas fa-bolt header_icon"></i>
         <address class="contact btn_deco">contact</address>
         <div class="contact sp_btn">
@@ -24,59 +24,66 @@
     </div>
   </header>
   <main>
-    <section class="main_headline">
+    <section class="inner main_headline">
       <h1 class="bolt_theme_headline headline_font">Bolt Theme</h1>
       <p class="bolt_theme_txt">FREE BOOTSTRAP THEMES</p>
     </section>
     <article class="what_we_can_do">
-      <img class="what_we_can_do_img" src="img/iphone.png"></img>
-      <div class="what_we_can_do_txt">
-        <h1 class="main_content_headline headline_font">WHAT WE CAN DO?</h1>
-        <p class="what_we_can_do_coment main_content_txt">Lorem lpsum is simply dummy text of the printing and typesetting industry. Lorem lpsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      <div class="inner">
+        <img class="what_we_can_do_img" src="img/iphone.png"></img>
+        <div class="what_we_can_do_txt">
+          <h1 class="main_content_headline headline_font">WHAT WE CAN DO?</h1>
+          <p class="what_we_can_do_coment main_content_txt">Lorem lpsum is simply dummy text of the printing and typesetting industry. Lorem lpsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
       </div>
     </article>
     <article class="our_latest_work">
-      <h1 class="main_content_headline headline_font">OUR LATEST WORK</h1>
-      <figure class="our_latest_work_content">
-        <figure class="our_latest_work_content_section">
-          <img class="our_latest_work_img" src="img/01.jpg"></img>
-          <img class="our_latest_work_img" src="img/02.jpg"></img>
-          <img class="our_latest_work_img" src="img/03.jpg"></img>
+      <div class="inner">
+        <h1 class="main_content_headline headline_font">OUR LATEST WORK</h1>
+        <figure class="our_latest_work_content">
+          <ul class="our_latest_work_content_section">
+            <li><img class="our_latest_work_img" src="img/01.jpg"></img></li>
+            <li><img class="our_latest_work_img" src="img/02.jpg"></img></li>
+            <li><img class="our_latest_work_img" src="img/03.jpg"></img></li>
+          </ul>
+          <ul class="our_latest_work_content_section">
+            <li><img class="our_latest_work_img" src="img/04.jpg"></img></li>
+            <li><img class="our_latest_work_img" src="img/05.jpg"></img></li>
+            <li><img class="our_latest_work_img" src="img/06.jpg"></img></li>
+          </ul>
         </figure>
-        <figure class="our_latest_work_content_section">
-          <img class="our_latest_work_img" src="img/04.jpg"></img>
-          <img class="our_latest_work_img" src="img/05.jpg"></img>
-          <img class="our_latest_work_img" src="img/06.jpg"></img>
-        </figure>
-      </figure>
-      <div class="our_latest_work_contact">
-        <p class="our_latest_work_txt main_content_txt">Lorem lpsum is simply dummy text of the printing and typesetting industry.Lorem lpsum has been the industry's standard dummy text ever.</p>
-        <button class="our_latest_work_btn btn_deco">Emai Me!</button>
+        <div class="our_latest_work_contact">
+          <p class="our_latest_work_txt main_content_txt">Lorem lpsum is simply dummy text of the printing and typesetting industry.Lorem lpsum has been the industry's standard dummy text ever.</p>
+          <button class="our_latest_work_btn btn_deco">Emai Me!</button>
+        </div>
+      </div>
     </article>
     <section class="our_skils">
-      <h1 class="main_content_headline headline_font">OUR SKILS</h1>
-      <figure>
-        <ul class="our_skils_content">
-          <li>
-            <img class="our_skils_img" src="img/circle_01.png"></img>
-            <p class="our_skils_txt">JavaScript</p>
-          </li>
-          <li>
-            <img class="our_skils_img" src="img/circle_02.png"></img>
-            <p class="our_skils__txt">Bootstrap</p>
-          </li>
-          <li>
-            <img class="our_skils_img" src="img/circle_03.png"></img>
-            <p class="our_skils_txt">WordPress</p>
-          </li>
-          <li>
-            <img class="our_skils_img" src="img/circle_04.png"></img>
-            <p class="our_skils_txt">Photoshop</p>
-          </li>
-        </ul>
-      </figure>
+      <div class="inner">
+        <h1 class="main_content_headline headline_font">OUR SKILS</h1>
+        <figure>
+          <ul class="our_skils_content">
+            <li>
+              <img class="our_skils_img" src="img/circle_01.png"></img>
+              <p class="our_skils_txt">JavaScript</p>
+            </li>
+            <li>
+              <img class="our_skils_img" src="img/circle_02.png"></img>
+              <p class="our_skils__txt">Bootstrap</p>
+            </li>
+            <li>
+              <img class="our_skils_img" src="img/circle_03.png"></img>
+              <p class="our_skils_txt">WordPress</p>
+            </li>
+            <li>
+              <img class="our_skils_img" src="img/circle_04.png"></img>
+              <p class="our_skils_txt">Photoshop</p>
+            </li>
+          </ul>
+        </figure>
+      </inner>
     </section>
-    <address>
+    <address class="inner">
       <ul class="sns">
         <li class="sns_icon"><i class="fas fa-facebook"></i></li>
         <li class="sns_icon"><i class="fas fa-dribbble"></i></li>
@@ -86,7 +93,9 @@
     </address>
   </main>
   <footer>
-    <p>Crafted with<i class="fas fa-heart"></i>by BlackTie.co.</p>
+    <div class="inner">
+      <p>Crafted with<i class="fas fa-heart"></i>by BlackTie.co.</p>
+    </div>
   </footer>
 <script src="js/script.js"></script>
 </body>

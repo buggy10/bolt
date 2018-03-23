@@ -4,6 +4,7 @@
   content: '';
   clear: both;
 }
+
 body {
   color: #333;
 }
@@ -15,6 +16,12 @@ header {
   width: 100%;
   color: #333;
   z-index: 100;
+  top: 0;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .fas {
@@ -76,6 +83,7 @@ main {
 
 .main_headline {
   padding: 250px 0;
+  margin-top: 80px;
 }
 
 .headline_font {
@@ -103,11 +111,13 @@ main {
 .what_we_can_do_img {
   display: inline-block;
   vertical-align: middle;
+  width: 40%;
+  max-width: 208px;
 }
 
 .what_we_can_do_txt {
   display: inline-block;
-  width: 750px;
+  width: 60%;
   line-height: 25px;
   margin-top: 20px;
 }
@@ -118,7 +128,6 @@ main {
 
 .what_we_can_do_coment {
   margin-top: 35px;
-  font-size: 20px;
 }
 
 .main_content_txt {
@@ -135,9 +144,13 @@ main {
   margin-bottom: 90px;
 }
 
+.our_latest_work_content_section > li {
+  display: table-cell;
+}
+
 .our_latest_work_img {
-  margin: 40px 50px;
   opacity: 0.7;
+  margin: 40px 50px;
 }
 
 .our_latest_work_img:hover {
@@ -172,8 +185,11 @@ main {
 }
 
 .our_skils_content > li {
-  display: inline-block;
-  margin: 70px 90px 0px 90px;
+  display: table-cell;
+}
+
+.our_skils_img {
+  margin: 70px 90px 10px;
 }
 
 .our_skils_txt {
@@ -212,7 +228,7 @@ footer {
   width: auto;
 }
 
-.our_latest_work_img {
+.our_latest_work_content_section > li {
   display: block;
   margin: 0 auto;
 }
@@ -225,6 +241,10 @@ footer {
   margin-bottom: 80px;
 }
 
+.our_latest_work_img {
+  margin: 0;
+}
+
 .our_latest_work_txt {
   display: block;
   margin: 0 auto;
@@ -232,26 +252,34 @@ footer {
 }
 
 .our_latest_work_btn {
-  margin: 40px 0 70px 0;
+  margin: 40px 0 0;
+}
+
+.main_content_headline {
+  margin-bottom: 40px;
 }
 
 .our_skils_content > li {
   display: block;
-  margin: 0 0 88px 0;
-}
-
-.our_skils_content > li:first-child {
-  margin-top: 70px;
+  margin-bottom: 88px;
 }
 
 .our_skils_content > li:last-child {
   margin-bottom: 0;
 }
+
+.our_skils_img {
+  margin: 0 0 10px;
+}
+
+.our_latest_work_img {
+  margin: 0;
+}
 }
 
 @media screen and (max-width: 766px) {
 .main_headline {
-  padding: 160px 0 130px 0;
+  padding: 160px 0 130px;
 }
 
 .bolt_theme_headline {
@@ -261,13 +289,26 @@ footer {
 .contact {
   display: none;
 }
+
 .sp_btn {
   display: inline-block;
 }
 
-.sns >li {
+.sns {
+  padding: 50px 0;
+}
+
+.sns > li {
   display: block;
   width: auto;
   margin: 0 15px;
 }
+}
+
+ul {
+  list-style-type: none;
+}
+
+li > img {
+  vertical-align: bottom;
 }
