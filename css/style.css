@@ -22,6 +22,7 @@ header {
 .inner {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .fas {
@@ -30,9 +31,9 @@ header {
 
 .contact {
   float: right;
-  margin-right: 30px;
   font-size: 12px;
   padding: 14px 12px;
+  margin-top: 5px;
 }
 
 .btn_deco {
@@ -73,7 +74,6 @@ header {
 
 .header_icon {
   font-size: 50px;
-  margin-left: 30px;
 }
 
 main {
@@ -288,6 +288,7 @@ footer {
 
 .contact {
   display: none;
+  margin-top: 0;
 }
 
 .sp_btn {
